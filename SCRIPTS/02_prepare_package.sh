@@ -180,7 +180,7 @@ svn export https://github.com/QiuSimons/OpenWrt-Add/trunk/luci-app-control-webur
 svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/lean/luci-app-adbyby-plus
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/adbyby package/lean/adbyby
 #add frp
-cp -rf ../PACK/packages/frp package/lean/frp
+#cp -rf ../PACK/packages/frp package/lean/frp
 # 广告过滤 AdGuard
 #svn export https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/new/luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/new/luci-app-adguardhome
@@ -249,13 +249,13 @@ svn export https://github.com/QiuSimons/OpenWrt-Add/trunk/luci-app-dnsproxy pack
 # Edge 主题
 git clone -b master --depth 1 https://github.com/kiddin9/luci-theme-edge.git package/new/luci-theme-edge
 # FRP 内网穿透
-rm -rf ./feeds/luci/applications/luci-app-frps
-rm -rf ./feeds/luci/applications/luci-app-frpc
-rm -rf ./feeds/packages/net/frp
-rm -f ./package/feeds/packages/frp
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frps package/lean/luci-app-frps
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frpc package/lean/luci-app-frpc
-svn export https://github.com/coolsnowwolf/packages/trunk/net/frp package/lean/frp
+#rm -rf ./feeds/luci/applications/luci-app-frps
+#rm -rf ./feeds/luci/applications/luci-app-frpc
+#rm -rf ./feeds/packages/net/frp
+#rm -f ./package/feeds/packages/frp
+#svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frps package/lean/luci-app-frps
+#svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frpc package/lean/luci-app-frpc
+#svn export https://github.com/coolsnowwolf/packages/trunk/net/frp package/lean/frp
 # IPSec
 svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-ipsec-server package/lean/luci-app-ipsec-server
 # IPv6 兼容助手
