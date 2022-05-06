@@ -179,6 +179,8 @@ svn export https://github.com/QiuSimons/OpenWrt-Add/trunk/luci-app-control-webur
 # 广告过滤 Adbyby
 svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/lean/luci-app-adbyby-plus
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/adbyby package/lean/adbyby
+#add frp
+cp -rf ../PACK/packages/frp package/lean/frp
 # 广告过滤 AdGuard
 #svn export https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/new/luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/new/luci-app-adguardhome
