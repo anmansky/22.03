@@ -227,13 +227,13 @@ svn export https://github.com/QiuSimons/OpenWrt_luci-app/trunk/luci-app-tencentd
 svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns feeds/luci/applications/luci-app-aliddns
 ln -sf ../../../feeds/luci/applications/luci-app-aliddns ./package/feeds/luci/luci-app-aliddns
 # Docker 容器
-rm -rf ./feeds/luci/applications/luci-app-dockerman
-svn export https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman feeds/luci/applications/luci-app-dockerman
-rm -rf ./feeds/luci/collections/luci-lib-docker
-svn export https://github.com/lisaac/luci-lib-docker/trunk/collections/luci-lib-docker feeds/luci/collections/luci-lib-docker
+#rm -rf ./feeds/luci/applications/luci-app-dockerman
+#svn export https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman feeds/luci/applications/luci-app-dockerman
+#rm -rf ./feeds/luci/collections/luci-lib-docker
+#svn export https://github.com/lisaac/luci-lib-docker/trunk/collections/luci-lib-docker feeds/luci/collections/luci-lib-docker
 #sed -i 's/+docker/+docker \\\n\t+dockerd/g' ./feeds/luci/applications/luci-app-dockerman/Makefile
-sed -i '/sysctl.d/d' feeds/packages/utils/dockerd/Makefile
-sed -i 's,# CONFIG_BLK_CGROUP_IOCOST is not set,CONFIG_BLK_CGROUP_IOCOST=y,g' target/linux/generic/config-5.10
+#sed -i '/sysctl.d/d' feeds/packages/utils/dockerd/Makefile
+#sed -i 's,# CONFIG_BLK_CGROUP_IOCOST is not set,CONFIG_BLK_CGROUP_IOCOST=y,g' target/linux/generic/config-5.10
 # DiskMan
 mkdir -p package/new/luci-app-diskman && \
 wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applications/luci-app-diskman/Makefile -O package/new/luci-app-diskman/Makefile
@@ -261,8 +261,8 @@ svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-ipse
 # IPv6 兼容助手
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/ipv6-helper package/lean/ipv6-helper
 # 京东签到 By Jerrykuku
-git clone --depth 1 https://github.com/jerrykuku/node-request.git package/new/node-request
-git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/new/luci-app-jd-dailybonus
+#git clone --depth 1 https://github.com/jerrykuku/node-request.git package/new/node-request
+#git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/new/luci-app-jd-dailybonus
 # MentoHUST
 git clone --depth 1 https://github.com/BoringCat/luci-app-mentohust package/new/luci-app-mentohust
 git clone --depth 1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk package/new/MentoHUST
@@ -335,12 +335,12 @@ sed -i '/shadowsocks-libev-ss-local/d' Makefile
 #sed -i 's,iptables-legacy,iptables-nft,g' Makefile
 popd
 # qBittorrent 下载
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-qbittorrent package/lean/luci-app-qbittorrent
-svn export https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent-static package/lean/qBittorrent-static
-svn export https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent package/lean/qBittorrent
-svn export https://github.com/coolsnowwolf/packages/trunk/libs/qtbase package/lean/qtbase
-svn export https://github.com/coolsnowwolf/packages/trunk/libs/qttools package/lean/qttools
-svn export https://github.com/coolsnowwolf/packages/trunk/libs/rblibtorrent package/lean/rblibtorrent
+#svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-qbittorrent package/lean/luci-app-qbittorrent
+#svn export https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent-static package/lean/qBittorrent-static
+#svn export https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent package/lean/qBittorrent
+#svn export https://github.com/coolsnowwolf/packages/trunk/libs/qtbase package/lean/qtbase
+#svn export https://github.com/coolsnowwolf/packages/trunk/libs/qttools package/lean/qttools
+#svn export https://github.com/coolsnowwolf/packages/trunk/libs/rblibtorrent package/lean/rblibtorrent
 # 清理内存
 svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-ramfree package/lean/luci-app-ramfree
 # ServerChan 微信推送
