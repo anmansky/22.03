@@ -175,10 +175,7 @@ svn export https://github.com/coolsnowwolf/lede/trunk/tools/upx tools/upx
 ### 获取额外的 LuCI 应用、主题和依赖 ###
 ####luci-app-v2ray
 cp -rf ../PACK/luci/applications/luci-app-v2ray package/luci-app-v2ray
-####luci-proto-tun2socks
-cp -rf ../PACK/luci/applications/luci-proto-tun2socks package/luci-proto-tun2socks
-### tun2socks
-cp -rf ../PACK/packages/tun2socks package/tun2socks
+
 # 更换 golang 版本
 rm -rf ./feeds/packages/lang/golang
 svn export https://github.com/openwrt/packages/trunk/lang/golang feeds/packages/lang/golang
